@@ -5,11 +5,11 @@
              xmlns:vm="clr-namespace:UGitEase.ViewModels"
              mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="500"
              x:Class="UGitEase.Views.MainView"
-             x:DataType="vm:MainViewModel">
+             x:DataType="vm:MainViewViewModel">
   <Design.DataContext>
     <!-- This only sets the DataContext for the previewer in an IDE,
          to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
-    <vm:MainViewModel />
+    <vm:MainViewViewModel />
   </Design.DataContext>
   <StackPanel>
     <!-- <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/> -->

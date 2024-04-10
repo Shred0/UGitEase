@@ -8,5 +8,14 @@
         x:Class="UGitEase.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Title="UGitEase">
-        <views:MainView />
+  <Design.DataContext>
+     <!--<vm:MainViewModel/> -->
+    <!--<vm:MainWindowViewModel/>-->
+    <vm:MainWindowViewModel/>
+  </Design.DataContext>
+  
+  <StackPanel>
+    <views:MainView />
+    <views:ToDoListView/>
+  </StackPanel>
 </Window>

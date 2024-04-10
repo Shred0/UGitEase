@@ -1,6 +1,6 @@
 ﻿namespace UGitEase.ViewModels;
 
-public class MainViewModel : ViewModelBase
+public class MainViewViewModel : ViewModelBase
 {
     public string Greeting => "Welcome to Avalonia!";
 }

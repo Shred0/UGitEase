@@ -3,7 +3,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:vm="clr-namespace:UGitEase.ViewModels"
-             mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="500"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="400"
              x:Class="UGitEase.Views.MainView"
              x:DataType="vm:MainViewViewModel">
   <Design.DataContext>
@@ -23,7 +23,7 @@
       </TextBlock>
     </Border>
     <StackPanel>
-      <Grid ShowGridLines="True" Margin="5"
+      <Grid ShowGridLines="False" Margin="5"
       ColumnDefinitions="120, 100"
       RowDefinitions="Auto, Auto, Auto">
         <Label Grid.Row="0" Grid.Column="0" Margin="10">Celsius</Label>
@@ -32,6 +32,7 @@
         
         <Label Grid.Row="1" Grid.Column="0" Margin="10">Fahrenheit</Label>
         <TextBox Grid.Row="1"  Grid.Column="1" Margin="0 5" Text="0"
+                 IsEnabled="False"
                  Name="tbFahrenheit"/>
         
         <Button Grid.Row="2" Grid.Column="1" Margin="0 5" 

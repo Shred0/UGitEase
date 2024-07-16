@@ -28,14 +28,15 @@
       RowDefinitions="Auto, Auto, Auto">
         <Label Grid.Row="0" Grid.Column="0" Margin="10">Celsius</Label>
         <TextBox Grid.Row="0" Grid.Column="1" Margin="0 5" Text="0"
+                 TextChanged="TextBox_TextChanged"
                  Name="tbCelsius"/>
         
         <Label Grid.Row="1" Grid.Column="0" Margin="10">Fahrenheit</Label>
         <TextBox Grid.Row="1"  Grid.Column="1" Margin="0 5" Text="0"
-                 IsEnabled="False"
+                 IsReadOnly="True"
                  Name="tbFahrenheit"/>
         
-        <Button Grid.Row="2" Grid.Column="1" Margin="0 5" 
+        <Button Grid.Row="2" Grid.Column="1" Margin="0 5"
                 Click="ButtonClicked">Calculate</Button>
       </Grid>
     </StackPanel>

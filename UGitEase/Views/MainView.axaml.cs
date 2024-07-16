@@ -11,8 +11,15 @@ public partial class MainView : UserControl
     {
         InitializeComponent();
 
-        tbFahrenheit.IsReadOnly = true;
+        //tbFahrenheit.IsReadOnly = true;
+        //tbFahrenheit.IsEnabled = false;
 
+        Calc();
+    }
+
+    private void TextBox_TextChanged(object? sender, Avalonia.Controls.TextChangedEventArgs e)
+    {
+        Debug.WriteLine("TextBox_TextChanged");
         Calc();
     }
 
@@ -43,4 +50,5 @@ public partial class MainView : UserControl
             tbFahrenheit.Text = "0.0";
         }
     }
+
 }
